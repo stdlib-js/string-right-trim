@@ -117,11 +117,34 @@ Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
 ```
 
 </section>
 
 <!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+### Notes
+
+-   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
+
+    ```bash
+    # Not escaped...
+    $ echo -n $'   foo   \n   bar   ' | rtrim --split /\r?\n/
+
+    # Escaped...
+    $ echo -n $'   foo   \n   bar   ' | rtrim --split /\\r?\\n/
+    ```
+
+-   The implementation ignores trailing delimiters.
+
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 
@@ -137,6 +160,15 @@ To use as a [standard stream][standard-streams],
 ```bash
 $ echo -n 'beep boop  ' | rtrim
 beep boop
+```
+
+By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
+
+```bash
+$ echo -n '   foo   \t   bar   \t   baz   ' | rtrim --split '\t'
+   foo
+   bar
+   baz
 ```
 
 </section>
@@ -155,8 +187,8 @@ beep boop
 
 ## See Also
 
--   [`@stdlib/string/left-trim`][@stdlib/string/left-trim]: trim whitespace characters from the beginning of a string.
--   [`@stdlib/string/trim`][@stdlib/string/trim]: trim whitespace characters from the beginning and end of a string.
+-   <span class="package-name">[`@stdlib/string/left-trim`][@stdlib/string/left-trim]</span><span class="delimiter">: </span><span class="description">trim whitespace characters from the beginning of a string.</span>
+-   <span class="package-name">[`@stdlib/string/trim`][@stdlib/string/trim]</span><span class="delimiter">: </span><span class="description">trim whitespace characters from the beginning and end of a string.</span>
 
 </section>
 
@@ -222,6 +254,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
 
 [unicode]: https://en.wikipedia.org/wiki/Unicode
+
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 <!-- <related-links> -->
 
