@@ -20,7 +20,7 @@ limitations under the License.
 
 # Right Trim
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Trim whitespace characters from the end of a string.
 
@@ -239,8 +239,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/string-right-trim/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/string-right-trim?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/string-right-trim.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/string-right-trim/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
