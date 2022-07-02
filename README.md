@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.rtrim;
+})();
 })();
 </script>
 ```
@@ -94,6 +96,7 @@ var out = rtrim( ' \t\t\n  Beep \r\n\t  ' );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-right-trim@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var out = rtrim( '   Whitespace   ' );
 // returns '   Whitespace'
@@ -104,6 +107,7 @@ out = rtrim( '\t\t\tTabs\t\t\t' );
 out = rtrim( '\n\n\nNew Lines\n\n\n' );
 // returns '\n\n\nNew Lines'
 
+})();
 })();
 </script>
 </body>
@@ -208,9 +212,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/string/left-trim]: https://github.com/stdlib-js/string-left-trim/tree/umd
+[@stdlib/string/left-trim]: https://github.com/stdlib-js/string-left-trim/tree/umd/tree/umd
 
-[@stdlib/string/trim]: https://github.com/stdlib-js/string-trim/tree/umd
+[@stdlib/string/trim]: https://github.com/stdlib-js/string-trim/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
