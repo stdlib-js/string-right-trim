@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string-right-trim",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Trim whitespace characters from the end of a string.",
   "license": "Apache-2.0",
   "author": {
