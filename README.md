@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import rtrim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-right-trim@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-right-trim/tags). For example,
+
+```javascript
 import rtrim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-right-trim@v0.2.0-esm/index.mjs';
 ```
 
@@ -96,7 +101,7 @@ var out = rtrim( ' \t\t\n  Beep \r\n\t  ' );
 <body>
 <script type="module">
 
-import rtrim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-right-trim@v0.2.0-esm/index.mjs';
+import rtrim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-right-trim@esm/index.mjs';
 
 var out = rtrim( '   Whitespace   ' );
 // returns '   Whitespace'
