@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import rtrim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-right-trim@deno/mod.js';
+import rtrim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-right-trim@v0.2.1-deno/mod.js';
 ```
 
 #### rtrim( str )
@@ -91,7 +91,7 @@ var out = rtrim( ' \t\t\n  Beep \r\n\t  ' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import rtrim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-right-trim@deno/mod.js';
+import rtrim from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-right-trim@v0.2.1-deno/mod.js';
 
 var out = rtrim( '   Whitespace   ' );
 // returns '   Whitespace'
